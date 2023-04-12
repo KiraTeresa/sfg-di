@@ -9,7 +9,7 @@ import org.springframework.context.ApplicationContext;
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
-		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args); // run turns back an application context
+		ApplicationContext ctx = SpringApplication.run(SfgDiApplication.class, args); // run returns an application context
 
 		MyController myController = (MyController) ctx.getBean("myController"); // asks for an instance of MyController (the Framework generates the Object, this is why we don't need to do "new MyController", it's being done for us)
 
