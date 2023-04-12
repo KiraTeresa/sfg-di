@@ -16,9 +16,8 @@ public class SfgDiApplication {
 
 		MyController myController = (MyController) ctx.getBean("myController"); // asks for an instance of MyController (the Framework generates the Object, this is why we don't need to do "new MyController", it's being done for us)
 
-		String greeting = myController.sayHello();
-
-		System.out.println(greeting);
+		System.out.println("------ Primary Bean");
+		System.out.println(myController.sayHello());
 
 		// make GreetingServiceImpl a service (@Service)
 		// --> necessary for all the following DIs
